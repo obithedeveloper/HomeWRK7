@@ -17,8 +17,8 @@ class ViewController:UIViewController, CLLocationManagerDelegate {
     var startLocation: CLLocation!
     
     // Seton Hill University
-    let kfloridaLatitude: CLLocationDegrees = 27.994
-    let kfloridaLongitude: CLLocationDegrees = -81.76
+    let kfloridaLatitude: CLLocationDegrees = 34.1367
+    let kfloridaLongitude: CLLocationDegrees = 118.6615
 
     
 
@@ -48,12 +48,12 @@ class ViewController:UIViewController, CLLocationManagerDelegate {
                 // Stop updating the location
                 locMan.stopUpdatingLocation()
                 // Congratulate the user
-                distanceLabel.text = "Enjoy\nfloria!"
+                distanceLabel.text = "Enjoy\nCalabasas!"
             } else {
                 let commaDelimited: NumberFormatter = NumberFormatter()
                 commaDelimited.numberStyle = NumberFormatter.Style.decimal
                 
-                distanceLabel.text=commaDelimited.string(from: NSNumber(value: miles))!+" miles to florida"
+                distanceLabel.text=commaDelimited.string(from: NSNumber(value: miles))!+" miles to Calabasas"
             }
             
             

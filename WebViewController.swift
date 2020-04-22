@@ -2,8 +2,8 @@
 //  WebViewController.swift
 //  Homework 7
 //
-//  Created by Shawn Broadway on 4/21/20.
-//  Copyright © 2020 Shawn Broadway. All rights reserved.
+//  Created by Obinna Ezekwesili on 4/21/20.
+//  Copyright © 2020 Obinna Ezekwesili. All rights reserved.
 //
 
 import UIKit
@@ -21,7 +21,7 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let myURL = URL(string:"https://www.myflorida.com/")
+        let myURL = URL(string:"https://www.cityofcalabasas.com/")
         let myRequest = URLRequest(url: myURL!)
         WebView.load(myRequest)
         
